@@ -13,7 +13,7 @@
   puts user.inspect
   
   user2 = User.find_or_create_by(email: "aofst2022@gmail.com") do |user|
-    user.name = "Martin"
+    user.name = "AOFST"
     user.password_digest = BCrypt::Password.create('aofstAdmin123').to_s
   end
 
