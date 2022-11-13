@@ -13,8 +13,8 @@
   puts user.inspect
   
   user2 = User.find_or_create_by(email: "aofst2022@gmail.com") do |user|
-    user2.name = "Martin"
-    user2.password_digest = BCrypt::Password.create('aofstAdmin123').to_s
+    user.name = "Martin"
+    user.password_digest = BCrypt::Password.create('aofstAdmin123').to_s
   end
 
   greeting = Page.find_or_create_by(name: "greeting-1") do |page|
