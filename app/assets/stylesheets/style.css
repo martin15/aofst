@@ -23,7 +23,7 @@ p {color: #000;}
   right: 0;
   z-index: 900;
 /*  padding-top: 20px;*/
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -348,7 +348,7 @@ p {color: #000;}
 }
 
 .fw-info .flogo {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 .footer-widget .text {
