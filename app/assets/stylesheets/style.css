@@ -29,7 +29,8 @@ p {color: #000;}
   -o-transition: all .4s ease-in-out;
   -ms-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
-  background: #ed1b26 url('/assets/menu-bg.jpg') no-repeat center top !important;
+  background-color: #fff;
+  /* background: #ed1b26 url('/assets/menu-bg.jpg') no-repeat center top !important; */
 /*  background-color: red;
   background-repeat: no-repeat;
   background-position: center;*/
@@ -68,7 +69,8 @@ p {color: #000;}
   display: block;
   width: 45px;
   height: 5px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #000;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -114,7 +116,8 @@ p {color: #000;}
 #nav .links li a {
   position: relative;
   /* text-transform: uppercase; */
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-size: 13px;
   padding: 4px 10px;
   border: 1px solid transparent;
@@ -127,7 +130,11 @@ p {color: #000;}
   font-weight: 600;
   cursor: pointer;
 }
-#nav .links li a:hover { color: #ed1b26; background-color: #fff; }
+#nav .links li a:hover {
+  color: #ed1b26;
+  background-color: #fff;
+  border-color: #ed1b26!important;
+}
 /*#nav .links li a:before {
   content: "";
   position: absolute;
@@ -154,7 +161,7 @@ p {color: #000;}
   -ms-transform: translate(-5px, -5px);
   transform: translate(-5px, -5px); 
 }
-#nav .links li.active a { border-color: #fff;color: #ed1b26;background-color: #fff; }
+#nav .links li.active a { border-color: #ed1b26;color: #ed1b26;background-color: #fff; }
 #nav .links li.active a:before {
   opacity: 1;
   -webkit-transform: translate(-5px, -5px);
@@ -175,8 +182,10 @@ p {color: #000;}
 }
 #nav.scrolled .bars span { background-color: #222222; }
 #nav.scrolled .links li a {
-  color: #fff;
-}#nav.scrolled .links li a:hover{
+  /* color: #fff; */
+  color: #000;
+}
+#nav.scrolled .links li a:hover{
   color: #ed1b26;
   border-color: #ed1b26;
 }
@@ -192,7 +201,8 @@ p {color: #000;}
   .section-title { font-size: 45px; } 
 }
 @media (max-width: 1199px) {
-  #nav { background-color: #273746; }
+  /* #nav { background-color: #273746; } */
+  #nav { background-color: #fff; }
   #nav .bars { display: block; }
   #nav .links {
     display: none;
