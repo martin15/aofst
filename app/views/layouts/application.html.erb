@@ -67,6 +67,7 @@
           <li class="<%= menu_indicator('hotels') %>"><%= link_to "OFFICIAL HOTEL", hotels_path %></li>
           <li class="<%= menu_indicator('informations') %>"><%= link_to "PLACE TO VISIT", informations_path %></li>
           <li class="<%= menu_indicator('home, covid_19') %>"><%= link_to "COVID-19 Safety Protocol", covid_19_path %></li>
+          <li class=""><%= link_to "RESULT", Page.find_by_name("result-url").content.gsub('<p>', '').gsub('</p>', '') %></li>
           <li class="<%= menu_indicator('downloads') %>"><%= link_to "DOWNLOAD", downloads_path %></li>
         </ul>
       </div>
@@ -104,6 +105,7 @@
                   <li><%= link_to "OFFICIAL HOTEL", hotels_path %></li>
                   <li><%= link_to "INFO JAKARTA", informations_path %></li>
                   <li><%= link_to "COVID-19 Safety Protocol", covid_19_path %></li>
+                  <li><%= link_to "RESULT", Page.find_by_name("result-url").content.gsub('<p>', '').gsub('</p>', '') %></li>
                   <li><%= link_to "DOWNLOAD", downloads_path %></li>
                 </ul>
               </div>

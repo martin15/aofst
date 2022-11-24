@@ -46,4 +46,9 @@
     page.content = Date.today.to_s
   end
   puts countdown.inspect
-  
+
+  result_url = Page.find_or_create_by(name: "result-url") do |page|
+    page.title = "result-url"
+    page.content = ''
+  end
+  puts result_url.inspect
